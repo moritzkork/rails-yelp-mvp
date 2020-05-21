@@ -4,7 +4,6 @@ class CreateReviews < ActiveRecord::Migration[6.0]
       t.text :context
       t.integer :rating
       t.references :restaurant, null: false, foreign_key: true
-
       t.timestamps
     end
   end
